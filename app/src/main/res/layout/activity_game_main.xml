@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xuanzhi.chinachess.chinachess.game_main"
+    android:orientation="vertical">
+    <!--<com.xuanzhi.chinachess.chinachess.Model.base.ChessBoardLayout-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@drawable/main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/view">-->
+    <!--</com.xuanzhi.chinachess.chinachess.Model.base.ChessBoardLayout>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/zuo"
+        android:text="坐标"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zuo"
+        android:text="悔棋"
+        android:onClick="backUndo"
+        />
+    <com.xuanzhi.chinachess.chinachess.Model.base.ChessView
+        android:layout_centerInParent="true"
+        android:id="@+id/CV"
+        android:background="@drawable/main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+
+    <!-- android:background="@drawable/main"-->
